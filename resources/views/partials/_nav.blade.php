@@ -7,13 +7,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">ThreeJect</a>
+            <a class="navbar-brand" href="/">3DT</a>
         </div>
         <ul class="nav navbar-nav navbar">
-            <li><a href="{{ route('job.create') }}">New Print Job</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#createJobModal">New Print Job</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="/logout">Logout</a></li>
         </ul>
     </div>
 </nav>
+
+@include('job._job_create_modal')

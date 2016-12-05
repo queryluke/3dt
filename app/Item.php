@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Items extends Model
+class Item extends Model
 {
     /***********************************
      * ATTRIBUTES
@@ -13,6 +13,11 @@ class Items extends Model
     /***********************************
      * RELATIONSHIPS
      ***********************************/
+
+    public function job()
+    {
+        return $this->belongsTo('App\Job');
+    }
 
     /***********************************
      * SCOPES

@@ -1,29 +1,23 @@
+{!! Form::model($job, ['route'=> ['job.update', $job->id], 'method'=>'PUT']) !!}
 
-{!! Form::model($job, array('route'=> array('job.update',$job->id), 'method'=>'PUT')) !!}
-
-@elseif(Route::currentRouteName() == 'job.create')
-
-    {!! Form::model($job, array('route'=> array('job.store'))) !!}
-
-
-
-@endif
-
-
+<div class="form-group">
+    {!! Form::label('name','Name') !!}
+    {!! Form::text('name', null, ['class'=>'form-control']) !!}
+</div>
 
 <div class="form-group">
     {!! Form::label('description','Description') !!}
-    {!! Form::textarea('description',null,array('class'=>'form-control')) !!}
+    {!! Form::textarea('description', null, ['class'=>'form-control']) !!}
 </div>
 
 <div class="form-group">
     {!! Form::label('requirements','Requirements') !!}
-    {!! Form::textarea('requirements',null,array('class'=>'form-control')) !!}
+    {!! Form::textarea('requirements', null, ['class'=>'form-control']) !!}
 </div>
 
 <div class="form-group">
     {!! Form::label('needed_by','Needed By') !!}
-    {!! Form::text('needed_by',null,array('class'=>'form-control')) !!}
+    {!! Form::text('needed_by', null, ['class'=>'form-control']) !!}
 </div>
 
 <div class="row">
@@ -51,21 +45,7 @@
             </label>
         </div>
     </div>
+    <button type="submit" class="btn btn-success">Update</button>
 </div>
-
-<div class="row">
-    @if(Route::currentRouteName() == 'job.edit')
-
-        <button type="submit" class="btn btn-success">Update</button>
-
-        @include('item._item_list')
-
-    @elseif(Route::currentRouteName() == 'job.create')
-
-        <button type="submit" class="btn btn-success">Save & Add Print Items</button>
-
-    @endif
-</div>
-
 
 {!! Form::close() !!}

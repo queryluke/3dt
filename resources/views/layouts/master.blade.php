@@ -10,7 +10,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
 
     <!-- META -->
-    <title>ThreeJect</title>
+    <title>3DT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 

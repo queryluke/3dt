@@ -13,6 +13,10 @@ class Patron extends Model
     /***********************************
      * RELATIONSHIPS
      ***********************************/
+    public function items()
+    {
+        return $this->hasManyThrough('App\Item','App\Job');
+    }
 
     /***********************************
      * SCOPES
