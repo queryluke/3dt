@@ -12,20 +12,20 @@
 ## App File Architecture
 
 ### **app/Http/routes.php**
-* https://laravel.com/docs/5.2/routing
-* https://laravel.com/docs/5.2/controllers#restful-resource-controllers
+https://laravel.com/docs/5.2/routing
+https://laravel.com/docs/5.2/controllers#restful-resource-controllers
 
 ### **app/Http/Controllers**
-* https://laravel.com/docs/5.2/controllers
+https://laravel.com/docs/5.2/controllers
 
 ### **app/<ModelName>.php**
-* https://laravel.com/docs/5.2/eloquent
+https://laravel.com/docs/5.2/eloquent
 
 ### **database/migrations**
-* https://laravel.com/docs/5.2/migrations
+https://laravel.com/docs/5.2/migrations
 
 ### **database/seeds**
-* https://laravel.com/docs/5.2/seeding
+https://laravel.com/docs/5.2/seeding
 
 ### **resources/assets/sass**
 Using Bootstrap, http://getbootstrap.com/
